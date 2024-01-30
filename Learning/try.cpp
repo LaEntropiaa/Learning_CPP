@@ -1,12 +1,22 @@
 #include <iostream>
+#include <cmath>
 
-using namespace std;
-
-int main() {
-	double temperature;
-	cout << "Enter a farenheit temperature \n> ";
-	cin >> temperature;
-	temperature = (temperature - 32) * (static_cast<double>(5) / 9);
-	cout << "Celsius: " << temperature;
-	return 0;
+double power(double base, int exponent)
+{
+    double result = 1;
+    for (int i = 0; i < exponent; i++)
+    {
+        result = result * base;
+    }
+    return result;
 }
+
+int main() 
+{
+    int base, exponent;
+    std::cout << "Entre a base and exponent:\n> ";
+    std::cin >> base >> exponent;
+    std::cout << power(base, exponent);
+    return 0;
+}
+
