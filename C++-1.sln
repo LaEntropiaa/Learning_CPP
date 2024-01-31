@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Calculator", "Calculator\Calculator.vcxproj", "{B61BE004-7942-4852-8B9E-E853A38C9FF3}"
+EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Learning", "Learning\Learning.vcxproj", "{0B3F5F15-2191-4BA9-A31D-41AE7935B040}"
 EndProject
 Global
@@ -13,6 +15,14 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B61BE004-7942-4852-8B9E-E853A38C9FF3}.Debug|x64.ActiveCfg = Debug|x64
+		{B61BE004-7942-4852-8B9E-E853A38C9FF3}.Debug|x64.Build.0 = Debug|x64
+		{B61BE004-7942-4852-8B9E-E853A38C9FF3}.Debug|x86.ActiveCfg = Debug|Win32
+		{B61BE004-7942-4852-8B9E-E853A38C9FF3}.Debug|x86.Build.0 = Debug|Win32
+		{B61BE004-7942-4852-8B9E-E853A38C9FF3}.Release|x64.ActiveCfg = Release|x64
+		{B61BE004-7942-4852-8B9E-E853A38C9FF3}.Release|x64.Build.0 = Release|x64
+		{B61BE004-7942-4852-8B9E-E853A38C9FF3}.Release|x86.ActiveCfg = Release|Win32
+		{B61BE004-7942-4852-8B9E-E853A38C9FF3}.Release|x86.Build.0 = Release|Win32
 		{0B3F5F15-2191-4BA9-A31D-41AE7935B040}.Debug|x64.ActiveCfg = Debug|x64
 		{0B3F5F15-2191-4BA9-A31D-41AE7935B040}.Debug|x64.Build.0 = Debug|x64
 		{0B3F5F15-2191-4BA9-A31D-41AE7935B040}.Debug|x86.ActiveCfg = Debug|Win32
