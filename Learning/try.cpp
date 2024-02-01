@@ -2,8 +2,8 @@
 #include <string>
 
 int main() 
-{   
-    char x = '0';
-    std::cout << (int)x;
+{
+    std::string list = "Hi guys";
+    std::cout << list + " your mom";
     return 0;
 }

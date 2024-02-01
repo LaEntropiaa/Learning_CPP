@@ -21,7 +21,7 @@ double calculate(double x, double y, char operation)
     }
     else
     {
-        throw std::invalid_argument("Erro: Operator not valid.");
+        throw std::invalid_argument("Error: invalid operator.");
     }
 }
 
