@@ -1,22 +1,9 @@
 #include <iostream>
 #include <string>
-#include <Windows.h>
-#include <cstdlib>
+#include "functionality.h"
 
-void sleep(int seconds)
+int main()
 {
-    Sleep(seconds * 1000);
-    return;
-}
-
-void clear()
-{
-    system("cls");
-    return;
-}
-
-int main() 
-{   
     int i = 0;
     while (i == 0)
     {
