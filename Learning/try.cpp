@@ -1,49 +1,18 @@
 #include <iostream>
-#include <string>
-#include <Windows.h>
-#include <cstdlib>
+#include<vector>
 
-void sleep(int seconds)
+void print_vector(std::vector<int> vectr)
 {
-    Sleep(seconds * 1000);
-    return;
-}
-
-void clear()
-{
-    system("cls");
-    return;
-}
-
-int main() 
-{   
-    int i = 0;
-    while (i == 0)
+    for (int i = 0; i < vectr.size(); i++)
     {
-        clear();
-        int choice;
-        std::cout << "=============\nGAME SELECTOR\n=============\n";
-        std::cout << "Slelect an option:\n1- Play\n2- Quit\n> ";
-        std::cin >> choice;
-        switch (choice)
-        {
-        case 1:
-            clear();
-            std::cout << "game :)";
-            break;
-        case 2:
-            clear();
-            std::cout << "Goodbye :)";
-            sleep(2);
-            clear();
-            i++;
-            break;
-        default:
-            clear();
-            std::cout << "Unvalid option, use the option numbers";
-            sleep(2);
-            break;
-        }
+        std::cout << vectr[i] << "\n";
     }
+    return;
+}
+
+int main()
+{
+    std::vector<int> data = { 1,2,3,4,8,1972 };
+    print_vector(data);
     return 0;
 }

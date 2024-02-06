@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 #include <cstdlib>
 #include <ctime>
 #include "functionality.h"
@@ -8,6 +9,8 @@ void guess_game()
     srand(time(NULL));
     int secret_number = (rand() % 100) + 1;//random number 0-99, we add one so is 1-100
     int guess = 0;
+    int attempts = 0;
+    std::vector<int> guesses;
     while (guess != secret_number)
     {
         clear();
@@ -25,11 +28,15 @@ void guess_game()
             sleep(2);
             clear();
         };
+        guesses.push_back(guess);
+        attempts++;
     }
     clear();
-    std::cout << "Congrats, you guessed the number!\n";
+    std::cout << "Congrats, you guessed the number in " << attempts << " attempst!\n";
+    std::cout << "Guesses:\n";
+    print_vector(guesses);
     std::cout << "Returning to menu...";
-    sleep(2);
+    sleep(4);
     clear();
     return;
 }
