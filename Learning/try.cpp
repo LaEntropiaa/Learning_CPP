@@ -5,19 +5,19 @@
 
 int main()
 {
-    std::ofstream file ("hello.txt");
-    if (file.is_open())
+    std::ifstream file ("hello.txt");
+    std::string current_line = "try";
+    std::vector<std::string> file_data;
+    while (current_line.size() > 1)
     {
-        std::cout << "success n00b\n";
+        std::getline(file, current_line);
+        file_data.push_back(current_line);
     }
-    std::vector<std::string> names;
-    names.push_back("Alonso");
-    names.push_back("Kevin");
-    names.push_back("Arasha");
-    for (std::string i : names)
+    for (std::string line : file_data)
     {
-        file << i << "\n";
+        std::cout << line << "\n";
     }
+
     file.close();
 
     return 0;
