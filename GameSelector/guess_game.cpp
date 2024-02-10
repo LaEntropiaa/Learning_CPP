@@ -3,6 +3,7 @@
 #include <cstdlib>
 #include <ctime>
 #include "functionality.h"
+#include "highscores.h"
 
 void guess_game()
 {
@@ -19,15 +20,13 @@ void guess_game()
         if (secret_number > guess)
         {
             std::cout << "Your guess was lower than the secret number";
-            sleep(2);
-            clear();
         }
         else if (secret_number < guess)
         {
             std::cout << "Your guess was higher than the secret number";
-            sleep(2);
-            clear();
         };
+        sleep(2);
+        clear();
         guesses.push_back(guess);
         attempts++;
     }
@@ -35,6 +34,7 @@ void guess_game()
     std::cout << "Congrats, you guessed the number in " << attempts << " attempst!\n";
     std::cout << "Guesses:\n";
     print_vector(guesses);
+    input_scores(attempts);
     std::cout << "Returning to menu...";
     sleep(4);
     clear();

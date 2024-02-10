@@ -1,3 +1,4 @@
+#include <vector>
 
 #ifndef FUNCTIONALITY_H
 #define FUNCTIONALITY_H
