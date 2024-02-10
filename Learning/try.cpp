@@ -3,14 +3,19 @@
 #include <vector>
 #include <string>
 
+void print_array(const int data[], int size)
+{
+    for (int i = 0; i < size; i++)
+    {
+        
+        std::cout << data[i] << "\n";
+    }
+}
+
 int main()
 {
-    std::ofstream file ("guess_game");
-    std::string current_line = "try";
-    std::vector<std::string> file_data;
-   
-
-    file.close();
+    int data[] = { 1,2,3 };
+    print_array(data, sizeof(data) / sizeof(data[0]));
 
     return 0;
 }
