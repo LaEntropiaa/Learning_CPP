@@ -14,7 +14,7 @@ void guess_game()
     std::vector<int> guesses;
     while (guess != secret_number)
     {
-        clear();
+        util::clear();
         std::cout << "Guess the number between 1 and 100\n> ";
         std::cin >> guess;
         if (secret_number > guess)
@@ -25,18 +25,18 @@ void guess_game()
         {
             std::cout << "Your guess was higher than the secret number";
         };
-        sleep(2);
-        clear();
+        util::sleep(2);
+        util::clear();
         guesses.push_back(guess);
         attempts++;
     }
-    clear();
+    util::clear();
     std::cout << "Congrats, you guessed the number in " << attempts << " attempst!\n";
     std::cout << "Guesses:\n";
-    print_vector(guesses);
+    util::print_vector(guesses);
     input_scores(attempts);
     std::cout << "Returning to menu...";
-    sleep(4);
-    clear();
+    util::sleep(4);
+    util::clear();
     return;
 }

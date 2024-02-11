@@ -9,7 +9,7 @@ int main()
     int i = 0;
     while (i == 0)
     {
-        clear();
+        util::clear();
         int choice;
         std::cout << "=============\nGAME SELECTOR\n=============\n";
         std::cout << "Slelect an option:\n1- Play guess game\n2- See highscores\n3- Quit\n> ";
@@ -17,26 +17,26 @@ int main()
         switch (choice)
         {
         case 1:
-            clear();
+            util::clear();
             guess_game();
             break;
         case 2:
-            clear();
+            util::clear();
             show_scores();
-            sleep(5);
+            util::sleep(5);
             break;
 
         case 3:
-            clear();
+            util::clear();
             std::cout << "Goodbye :)";
-            sleep(2);
-            clear();
+            util::sleep(2);
+            util::clear();
             i++;
             break;
         default:
-            clear();
+            util::clear();
             std::cout << "Unvalid option, use the option numbers";
-            sleep(2);
+            util::sleep(2);
             break;
         }
     }
